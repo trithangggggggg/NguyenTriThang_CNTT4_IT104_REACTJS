@@ -1,0 +1,225 @@
+.red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.blue {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.green {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.boxcolor {
+  display: flex;
+  gap: 30px;
+}
+
+/* bai6 */
+.bai6 .container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.bai6 header {
+  background: #d1d9e0;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+
+.bai6 .content {
+  flex: 1;
+  display: flex;
+}
+
+.bai6 nav {
+  background: #203b8e;
+  color: white;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bai6 .main-footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bai6 main {
+  flex: 1;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.bai6 footer {
+  background: #d1d9e0;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+/* bai7 */
+.bai7 header {
+  background-color: rgb(196, 195, 195);
+  color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bai7 nav {
+  background-color: rgb(166, 166, 166);
+  color: rgb(0, 0, 0);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bai7 .container {
+  display: flex;
+  flex-direction: row;
+}
+.bai7 .menu {
+  background-color: rgb(34, 188, 34);
+  width: 20%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bai7 .content {
+  background-color: pink;
+  width: 60%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+}
+.bai7 .content .item {
+  flex: 0 0 calc(25% - 20px);
+  height: 100px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-sizing: border-box;
+}
+.bai7 .article {
+  background-color: rgb(60, 60, 246);
+  width: 20%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bai 8 */
+.bai8 {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.bai8 .table-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow-x: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.bai8 table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.bai8 thead {
+  background: #fff;
+}
+
+.bai8 thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  color: #9ca3af;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.bai8 tbody td {
+  padding: 12px 16px;
+  font-size: 13px;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+.bai8 tbody td:nth-child(4) {
+  font-weight: 500;
+}
+
+.bai8 .actions {
+  display: flex;
+  gap: 8px;
+}
+
+.bai8 .btn {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #374151;
+}
+
+.bai8 .btn:hover {
+  background: #f3f4f6;
+}
+
+.bai8 .btn-danger {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+}
+
+.bai8 .btn-danger:hover {
+  background: #dc2626;
+}
+/*  */
