@@ -1,0 +1,38 @@
+.bai5 .regiter{
+  background-color: blue;
+  color: white;
+  width: 200px;
+  height: 30px;
+  margin: 30px;
+  border-radius: 4px;
+}
+.bai5 input{
+  border-radius: 4px;
+}
+.bai5 .container{
+  background-color: aliceblue ;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  justify-content: center;
+}
+/* bai 6 */
+
+.bai6 .container{
+  margin: 100px;
+}
+.bai6 button{
+  margin-top: 20px;
+  width: 70px;
+  height: 30px;
+}
+
+
+
+
+
+
+
+
