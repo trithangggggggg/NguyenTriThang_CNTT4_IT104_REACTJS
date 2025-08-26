@@ -1,0 +1,125 @@
+.bai1 li {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(114, 156, 255);
+}
+.bai1 {
+  background-color: aquamarine;
+  width: 250px;
+  text-align: center;
+}
+
+.bai2 {
+  text-align: center;
+}
+
+.bai4 {
+  text-align: center;
+}
+
+.bai5 {
+  text-align: center;
+}
+.bai5 input {
+  width: 200px;
+  height: 30px;
+  background-color: aqua;
+  border: none;
+  margin-bottom: 5px;
+}
+.bai5 button {
+  margin-top: 10px;
+  background-color: rgb(0, 149, 255);
+  color: white;
+  border-radius: 4px;
+}
+
+.bai6 button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.bai6 .light-theme {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.bai6 .dark-theme {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.bai7 {
+  background: white;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.bai7 .navbar {
+  background: orange;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.bai7 .navbar a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+.bai7 .navbar .cart-icon {
+  margin-left: auto;
+  position: relative;
+}
+.bai7 .navbar .cart-icon .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+/* Product List */
+.bai7 .product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* luôn 4 cột */
+  gap: 20px;
+  padding: 20px;
+}
+.bai7 .product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+.bai7 .product-card img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+.bai7 .product-card button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bai7 .cart-icon i{
+    /* padding-left: 20px; */
+    color: white;
+}
+
