@@ -1,0 +1,14 @@
+.css  {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+.bai7_8 button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
