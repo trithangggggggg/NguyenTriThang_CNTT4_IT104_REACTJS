@@ -7,7 +7,6 @@ import type { Contact } from './types'
 export default function App() {
   const [contacts, setContacts] = useState<Contact[]>([])
 
-  // Load from localStorage on mount
   useEffect(() => {
     try {
       const raw = localStorage.getItem('contacts')
@@ -18,7 +17,6 @@ export default function App() {
     } catch {}
   }, [])
 
-  // Persist to localStorage when contacts change
   useEffect(() => {
     try {
       localStorage.setItem('contacts', JSON.stringify(contacts))
