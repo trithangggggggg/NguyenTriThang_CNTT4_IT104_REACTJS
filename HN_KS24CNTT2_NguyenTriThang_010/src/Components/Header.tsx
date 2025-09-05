@@ -1,6 +1,5 @@
 import { Contact } from "lucide-react";
 
-
 export default function Header() {
   return (
     <>
@@ -13,3 +12,4 @@ export default function Header() {
     </>
   );
 }
+
