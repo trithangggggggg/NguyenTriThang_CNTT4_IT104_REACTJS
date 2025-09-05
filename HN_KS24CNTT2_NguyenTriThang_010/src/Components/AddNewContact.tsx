@@ -36,7 +36,7 @@ export default function AddNewContact({ contacts, editingContact, onSave, onCanc
       return false;
     }
     const isDuplicate = contacts.some(
-      (c) => c.phone === trimmedPhone && (editId === null || c.id !== editId)
+      (c) => c.phone === trimmedPhone && (editId == null || c.id !== editId)
     );
     if (isDuplicate) {
       setError("Số điện thoại đã tồn tại");
@@ -101,3 +101,4 @@ export default function AddNewContact({ contacts, editingContact, onSave, onCanc
     </div>
   );
 }
+
