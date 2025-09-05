@@ -11,7 +11,7 @@ export default function ContactList({ contacts, onEdit }: ContactListProps) {
   return (
     <div className="bg-white rounded-t-lg shadow ">
       <div>
-        <h2 className="text-green-500 font-bold text-lg mb-3 flex items-center pl-3 pt-5">
+        <h2 className="text-green-500 font-bold text-lg mb-3 flex items-center pl-3 pt-5 ">
           <Logs className="mr-3" /> Danh sách liên hệ
         </h2>
       </div>
@@ -64,3 +64,4 @@ export default function ContactList({ contacts, onEdit }: ContactListProps) {
     </div>
   );
 }
+
