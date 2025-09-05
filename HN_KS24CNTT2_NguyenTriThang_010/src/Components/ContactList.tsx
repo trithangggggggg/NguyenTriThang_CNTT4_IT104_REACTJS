@@ -1,34 +1,12 @@
-import { Logs } from "lucide-react";
-import React, { useState } from "react";
-// import AddNewContact from "./AddNewContact";
+import { Logs, Pencil, Trash2 } from "lucide-react";
+import type { Contact } from "../types";
 
-interface Contact {
-  id: number;
-  name: string;
-  phone: string;
-}
+type ContactListProps = {
+  contacts: Contact[];
+  onEdit: (id: number) => void;
+};
 
-export default function ContactList() {
-  const [contacts, setContacts] = useState<Contact[]>([
-    { id: 1, name: "Nguyễn Văn A", phone: "0912345678" },
-    { id: 2, name: "Nguyễn Thị B", phone: "0987654321" },
-  ]);
-
-  // const [name, setName] = useState("");
-  //   const [phone, setPhone] = useState("");
-  //   const [error, setError] = useState("");
-  const [deleteId, setDeleteId] = useState<number | null>(null);
-
-  const handleEdit = (id: number) => {
-    const contact = contacts.find((c) => c.id === id);
-    if (!contact) return;
-    setContacts()
-    // setName(contact.name);
-    // setPhone(contact.phone);
-    // setEditId(id);
-    // setError("");
-  };
-
+export default function ContactList({ contacts, onEdit }: ContactListProps) {
 
   return (
     <div className="bg-white rounded-t-lg shadow ">
@@ -55,17 +33,17 @@ export default function ContactList() {
                   <div className="flex space-x-2">
                     <button
                       type="button"
-                      onClick={() => handleEdit(c.id)}
-                      className="bg-blue-600 text-white px-3 py-1 rounded flex items-center gap-1 hover:bg-blue-700 transition"
+                      onClick={() => onEdit(c.id)}
+                      className="bg-blue-600 text-white px-3 py-1 rounded flex items-center gap-1 hover:bg-blue-700 transition cursor-pointer"
                     >
-                      <i className="fas fa-edit"></i> Sửa
+                      <Pencil size={16}/> Sửa
                     </button>
                     <button
                       type="button"
-                      onClick={() => setDeleteId(c.id)}
-                      className="bg-red-600 text-white px-3 py-1 rounded flex items-center gap-1 hover:bg-red-700 transition"
+                      disabled
+                      className="bg-red-400 text-white px-3 py-1 rounded flex items-center gap-1 cursor-not-allowed cursor-pointer"
                     >
-                      <i className="fas fa-trash-alt"></i> Xóa
+                      <Trash2 size={16}/> Xóa
                     </button>
                   </div>
                 </td>
@@ -82,28 +60,7 @@ export default function ContactList() {
         </table>
       </div>
 
-      {deleteId && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <div className="bg-white rounded-lg shadow-lg p-6 w-80">
-            <h3 className="text-lg font-semibold mb-4">Xác nhận xóa</h3>
-            <p className="mb-4">Bạn có chắc muốn xóa liên hệ này?</p>
-            <div className="flex justify-end gap-2">
-              <button
-                onClick={() => setDeleteId(null)}
-                className="px-4 py-2 border rounded hover:bg-gray-100"
-              >
-                Hủy
-              </button>
-              <button
-                onClick={confirmDelete}
-                className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
-              >
-                Xóa
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }
